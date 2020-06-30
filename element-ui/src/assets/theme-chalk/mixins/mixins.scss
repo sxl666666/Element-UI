@@ -1,5 +1,5 @@
 @import './mixins/config.scss';
-
+@import '../common/var.scss';
 /**
     BEM
 */
@@ -34,6 +34,16 @@
     $currentState:$selector + $state-prefix + $state;
     @at-root {
       #{$currentState}{
+        @content;
+      }
+    }
+  }
+
+
+  @mixin res($key, $map: $--breakpoints) {
+    @if map-has-key($map, $key) {
+      $key: map-get($map, $key);
+      @media only screen and #{inspect($key)} {
         @content;
       }
     }
