@@ -2,6 +2,7 @@
 @import "./mixins/utils.scss";
 
 @include b(row) {
+  box-sizing: border-box;
   @include utils-clearfix;
   @include m(flex) {
     display: flex;

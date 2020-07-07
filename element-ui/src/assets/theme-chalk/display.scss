@@ -1,0 +1,20 @@
+@import "./mixins/mixins.scss";
+@import './common/var.scss';
+
+.hidden {
+  @each $break-points-name, $value in $--breakpoints-spec {
+    &-#{$break-points-name} {
+      @include res($break-points-name, $--breakpoints-spec) {
+        display: none !important;
+      }
+    }
+  }
+}
+// @mixin res($key, $map: $--breakpoints) {
+//     @if map-has-key($map, $key) {
+//       $key: map-get($map, $key);
+//       @media only screen and #{inspect($key)} {
+//         @content;
+//       }
+//     }
+//   }
