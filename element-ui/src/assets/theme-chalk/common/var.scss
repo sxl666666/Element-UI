@@ -29,4 +29,46 @@ $--breakpoints-spec:(
   'lg-only':(min-width:#{$--lg}) and (max-width:#{$--xl - 1}),
   'lg-and-down':(max-width:#{$--xl - 1}),
   'xl-only':(min-width:#{$--xl})
-)
+);
+
+/* color
+------------------------------*/
+$--color-white:#ffffff !default;
+$--color-black:#000000 !default;
+$--color-primary: #409eff !default;
+$--color-primary-light-1:mix($--color-white,$--color-primary,10%) !default;
+$--color-primary-light-2:mix($--color-white,$--color-primary,20%) !default;
+$--color-primary-light-3:mix($--color-white,$--color-primary,30%) !default;
+$--color-primary-light-4:mix($--color-white,$--color-primary,40%) !default;
+$--color-primary-light-5:mix($--color-white,$--color-primary,50%) !default;
+$--color-primary-light-6:mix($--color-white,$--color-primary,60%) !default;
+$--color-primary-light-7:mix($--color-white,$--color-primary,70%) !default;
+$--color-primary-light-8:mix($--color-white,$--color-primary,80%) !default;
+$--color-primary-light-9:mix($--color-white,$--color-primary,90%) !default;
+//辅助色
+
+$--color-success:#67c23a !default;//成功
+$--color-success-lingth:mix($--color-white,$--color-success,80%) !default;
+$--color-success-ligther:mix($--color-white,$--color-success,90%) !default;
+
+$--color-warning:#E6A23C !default;//警告
+$--color-warning-lingth:mix($--color-white,$--color-warning,80%) !default;
+$--color-warning-ligther:mix($--color-white,$--color-warning,90%) !default;
+
+$--color-danger:#F56C6C !default;//危险
+$--color-danger-lingth:mix($--color-white,$--color-danger,80%) !default;
+$--color-danger-ligther:mix($--color-white,$--color-danger,90%) !default;
+
+$--color-info:#909399 !default;//信息
+$--color-info-lingth:mix($--color-white,$--color-info,80%) !default;
+$--color-info-ligther:mix($--color-white,$--color-info,90%) !default;
+
+//中性色
+$--color-text-primary:#303133 !default ;//主要文字
+$--color-text-primary:#606266 !default ;//常规文字
+$--color-text-secondary:#909399 !default ;//次要文字
+$--color-text-placeholder:#c0c4cc !default ;//占位文字
+$--border-color-base:#dcdfe6 !default ;//一级边框
+$--border-color-light:#e4e7ed !default ;//二级边框
+$--border-color-linghter:#ebeef5 !default ;//三级边框
+$--border-color-extra-light:#f2f6fc !default ;//四级边框
